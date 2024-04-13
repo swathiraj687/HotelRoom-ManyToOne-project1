@@ -52,8 +52,8 @@ public class HotelController {
         hotelJpaService.deleteHotel(hotelId);
     }
 
-    // @GetMapping
-    // public List<Room> getHotelRooms(int hotelId) {
-    // return hotelJpaService.getHotelRooms(hotelId);
-    // }
+    @GetMapping("/hotels/{hotelId}/rooms}
+    public List<Room> getHotelRooms(int hotelId) {
+        return hotelJpaService.getHotelRooms(hotelId);
+    }
 }
